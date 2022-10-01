@@ -1,0 +1,28 @@
+localhost:7216/pizza/4
+
+###
+
+POST localhost:7216/pizza HTTP/1.1
+content-type: application/json
+
+{
+  "name": "BBQ Beef",
+  "sauce": {
+    "name": "BBQ",
+    "isVegan": false
+  },
+  "toppings": [
+    {
+      "name": "Smoked Beef Brisket",
+      "calories": 250
+    }
+  ]
+}
+
+###
+
+PUT localhost:7216/pizza/4/addtopping?toppingId=5
+
+###
+
+PUT localhost:7216/pizza/4/updatesauce?sauceId=2
